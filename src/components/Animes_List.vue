@@ -1,7 +1,8 @@
 <template>
-  <div class="max-w-screen grid justify-content-center">
+  <h1>Whispers From The Abyss</h1>
+  <div class="max-w-screen grid grid-nogutter justify-content-center">
     <Card 
-      class="m-1 md:col-3" 
+      class="m-1 md:col-6 grid-nogutter" 
       v-for="(anime, index) in animes" 
       :key=index
     >
