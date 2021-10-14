@@ -1,14 +1,11 @@
-<template class="a-list grid cursor-pointerjustify-content-center align-itens-center align-content-center">
-  <h1 class="text-primary">Whispers From The Abyss</h1>
-  
-  <div class="col-6">
+<template>
+  <div class="max-w-screen grid justify-content-center">
     <Card 
-      class="m-1 card justify-content-center align-itns-center align-content-center" 
+      class="m-1 md:col-3" 
       v-for="(anime, index) in animes" 
       :key=index
-
     >
-      <template #title >
+      <template #title>
         <div class="p-card-title text-primary">
           {{ anime.anime }}
         </div>
