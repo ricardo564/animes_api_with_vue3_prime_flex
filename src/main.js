@@ -4,7 +4,7 @@ import router from "./router";
 import store from "./store";
 
 import PrimeVue from 'primevue/config';
-import "primeflex/primeflex.css"
+import "primeflex/primeflex.css";
 
 import "primevue/resources/themes/bootstrap4-dark-purple/theme.css"
 

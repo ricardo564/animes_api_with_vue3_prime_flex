@@ -1,35 +1,35 @@
-<template>
+<template class="a-list grid cursor-pointerjustify-content-center align-itens-center align-content-center">
   <h1 class="text-primary">Whispers From The Abyss</h1>
-  <div class="cursor-pointer">
-    <Carousel :value="cars">
-      <template #item="slotProps">
-        <Card class="m-1" v-for="(anime, index) in animes" :key="index">
-          <template #title>
-            <div class="p-card-title text-primary">
-              {{ anime.anime }}
-            </div>
-          </template>
-          <template #content>
-            <div class="p-card-content">
-              {{ anime.quote }}
-            </div>
-          </template>
-          <template #footer>
-            <div class="p-card-footr text-primary">
-              {{ anime.character }}
-            </div>
-          </template>
-        </Card>
+  
+  <div class="col-6">
+    <Card 
+      class="m-1 card justify-content-center align-itns-center align-content-center" 
+      v-for="(anime, index) in animes" 
+      :key=index
+
+    >
+      <template #title >
+        <div class="p-card-title text-primary">
+          {{ anime.anime }}
+        </div>
       </template>
-    </Carousel>
+      <template #content>
+        <div class="p-card-content">
+          {{ anime.quote }}
+        </div>
+      </template>
+      <template #footer>
+        <div class="p-card-footr text-primary">
+          {{ anime.character }}
+        </div>
+      </template>
+    </Card>
   </div>
 </template>
 
 <script>
-import Carousel from 'primevue/carousel';
 import Card from "primevue/card";
 import axios from "axios";
-
 
 export default {
   name: "AnimesList",
